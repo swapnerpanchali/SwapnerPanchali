@@ -1,0 +1,95 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Custom Floating Header */
+.custom-header {
+    position: fixed;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    max-width: 900px;
+    height: 70px;
+    background: black;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    transition: bottom 0.4s ease-in-out;
+    z-index: 1000;
+}
+
+/* Show header when scrolling down */
+.show-header {
+    bottom: 15px !important;
+}
+
+/* Buttons */
+.header-left-button, .header-right-button {
+    font-size: 14px;
+    padding: 10px 30px;
+    border-radius: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+}
+
+.header-left-button {
+    background: white;
+    color: black;
+}
+
+.header-right-button {
+    background: red;
+    color: white;
+}
+
+/* Clickable Logo in Center */
+.header-text-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    color: white;
+    font-weight: bold;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.swapner-text {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.panchali-text {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .custom-header {
+        width: 95%;
+        height: 60px;
+        padding: 8px 12px;
+    }
+    .header-left-button, .header-right-button {
+        font-size: 13px;
+        padding: 8px 15px;
+    }
+    .swapner-text {
+        font-size: 16px;
+    }
+    .panchali-text {
+        font-size: 10px;
+    }
+}
